@@ -1,3 +1,4 @@
+
 package hu.bme.mit.spaceship;
 
 /**
@@ -76,9 +77,12 @@ public class GT4500 implements SpaceShip {
       }
 
       else{
-        // try to fire both of the torpedos
-        //TODO implement feature
-
+        if(! primaryTorpedoStore.isEmpty()){
+		firingSuccess = primaryTorpedoStore.fire(1);
+	}
+	if(! secondaryTorpedoStore.isEmpty()){
+		firingSuccess = secondaryTorpedoStore.fire(1);
+	}
       }
     }
 
