@@ -1,3 +1,5 @@
+sonarqube-6.3*
+
 *.class
 
 # Mobile Tools for Java (J2ME)
@@ -12,4 +14,5 @@
 hs_err_pid*
 
 # ignore target from Maven
+
 target/
